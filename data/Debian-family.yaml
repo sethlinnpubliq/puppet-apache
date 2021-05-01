@@ -1,5 +1,7 @@
 ---
-apchache
 apache::install_name: 'apache2'
 apache::config_path: '/etc/apache2/apache2.conf'
 apache::service_name: 'apache2'
+apache::vhosts_dir: '/etc/apache2/sites-available'
+apache::vhost_owner: 'www-data'
+apache::vhost_group: 'www-data'
